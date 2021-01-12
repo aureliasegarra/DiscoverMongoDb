@@ -23,17 +23,16 @@ const port = process.env.PORT;
 
 // Roads 
 app.get('/', async (req,res) => {
-    // All the pokemon
-    const db = await getDb();
-    const pokemon = await db.collection('pokedex').find().toArray();
+    // Lister tous les pokemon
+    const pokemon = await (await db).collection('pokedex').find().toArray();
     console.log(pokemon);
     res.json(pokemon);
 })
 
 app.get('/type/:type', (req, res) => {
-    // Pokemon type : poison for example
+    // Lister les pokemon d'un type donné (ex:poison)
 })
 
 
 //Server launched
-app.listen(port, () => console.log("ça marche !")); 
+app.listen(port, () => console.log("ça marche !"));

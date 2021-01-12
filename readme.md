@@ -1,9 +1,9 @@
-# 🤔 Pokedex version MongoDb 
+# :seedling: Pokedex version MongoDb 
 
 ## Dicovering, testing and create requests "by hand" with the mongodb package with my Pokedex project.
 
 ## Illustration
-![Exemple]()
+![Exemple](images/screenshot.png)
 
 ## Language/Tools
 - javascript vanilla
